@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Galeria ❤️</title>
+    <link rel="stylesheet" href="galeria.css">
+</head>
+<body>
+    <div class="hearts"></div>
+
+    <header class="gallery-header">
+        <h1>Nossa Galeria</h1>
+        <p class="subtitle">Momentos que guardamos no coração</p>
+    </header>
+
+    <main class="gallery-container" id="gallery">
+        <!-- As fotos serão inseridas aqui pelo JavaScript -->
+    </main>
+
+    <div class="gallery-footer">
+        <button onclick="window.location.href='historia.html'" class="back-btn">← Voltar ao livro</button>
+        <button onclick="window.location.href='index.html'" class="back-btn secondary">Início</button>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox hidden">
+        <button class="lightbox-close" id="closeLightbox">×</button>
+        <button class="lightbox-nav prev" id="prevImage">‹</button>
+        <img id="lightboxImg" src="" alt="Foto">
+        <button class="lightbox-nav next" id="nextImage">›</button>
+        <div class="lightbox-counter" id="lightboxCounter"></div>
+    </div>
+
+    <script src="galeria.js"></script>
+</body>
+</html>

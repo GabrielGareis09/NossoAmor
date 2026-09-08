@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(circle at top, #351b2c 0%, transparent 40%),
+        linear-gradient(135deg, #120b12, #1d101b, #0d090d);
+
+    color: #fff;
+
+    font-family: 'Poppins', sans-serif;
+
+    overflow: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+
+    text-align: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+.heart-icon {
+    font-size: 45px;
+
+    color: #e8a0b8;
+
+    margin-bottom: 10px;
+
+    animation: heartbeat 2s infinite;
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: clamp(55px, 10vw, 85px);
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    background: linear-gradient(
+        90deg,
+        #f8dce5,
+        #d990aa,
+        #f8dce5
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #c9aeba;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 22px;
+
+    font-style: italic;
+
+    margin-bottom: 45px;
+}
+
+.login-box {
+    padding: 30px;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    background: rgba(255, 255, 255, 0.035);
+
+    backdrop-filter: blur(15px);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.35),
+        inset 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.login-text {
+    font-size: 14px;
+
+    color: #c9b8c0;
+
+    margin-bottom: 20px;
+}
+
+.input-container {
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 18px;
+
+    border-radius: 12px;
+
+    background: rgba(0, 0, 0, 0.2);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    transition: 0.3s;
+}
+
+.input-container:focus-within {
+    border-color: #d990aa;
+
+    box-shadow: 0 0 20px rgba(217, 144, 170, 0.12);
+}
+
+.input-container span {
+    color: #d990aa;
+
+    font-size: 20px;
+
+    margin-right: 12px;
+}
+
+input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 14px;
+}
+
+input::placeholder {
+    color: #76656e;
+}
+
+button {
+    width: 100%;
+
+    height: 55px;
+
+    margin-top: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    background: linear-gradient(
+        135deg,
+        #d990aa,
+        #b96c89
+    );
+
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+
+    box-shadow: 0 10px 25px rgba(185, 108, 137, 0.2);
+}
+
+button span {
+    margin-left: 8px;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 15px 30px rgba(185, 108, 137, 0.3);
+}
+
+button:hover span {
+    margin-left: 14px;
+}
+
+.error-message {
+    min-height: 20px;
+
+    margin-top: 12px;
+
+    font-size: 12px;
+
+    color: #e99aaa;
+}
+
+.footer {
+    margin-top: 30px;
+
+    color: #6f5d66;
+
+    font-size: 11px;
+}
+
+.hearts {
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+.floating-heart {
+    position: absolute;
+
+    color: rgba(217, 144, 170, 0.15);
+
+    font-size: 15px;
+
+    animation: float 8s linear infinite;
+}
+
+@keyframes heartbeat {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+
+}
+
+@keyframes float {
+
+    from {
+        transform: translateY(110vh) rotate(0deg);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-10vh) rotate(360deg);
+        opacity: 0;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 88%;
+    }
+
+    .login-box {
+        padding: 25px 20px;
+    }
+
+    .subtitle {
+        font-size: 19px;
+    }
+
+}

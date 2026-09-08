@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa História ❤️</title>
+    <link rel="stylesheet" href="historia.css">
+</head>
+
+<body>
+    <div class="hearts"></div>
+
+    <!-- Tela do livro fechado -->
+    <div id="coverScreen" class="cover-screen">
+        <div class="book-cover" id="bookCover">
+            <div class="cover-front">
+                <div class="cover-content">
+                    <div class="cover-ornament">✦</div>
+                    <h1 class="cover-title">Nossa História</h1>
+                    <div class="cover-line"></div>
+                    <p class="cover-subtitle">Para Laura</p>
+                    <p class="cover-date">16.12.2025 — ∞</p>
+                    <div class="cover-heart">♥</div>
+                </div>
+            </div>
+        </div>
+        <p class="tap-hint">Toque no livro para abrir</p>
+    </div>
+
+    <!-- Tela do livro aberto -->
+    <div id="bookScreen" class="book-screen hidden">
+        <div class="book-wrapper">
+            <div class="book" id="book">
+                <!-- Páginas inseridas via JS -->
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="prevBtn" class="nav-btn" disabled>
+                <span>←</span> Anterior
+            </button>
+            <span id="pageIndicator" class="page-indicator">1 / 1</span>
+            <button id="nextBtn" class="nav-btn">
+                Próxima <span>→</span>
+            </button>
+        </div>
+
+        <div id="endOptions" class="end-options hidden">
+            <p class="end-text">Fim do capítulo... por enquanto ❤️</p>
+            <div class="end-buttons">
+                <button id="rereadBtn" class="end-btn">Ler novamente</button>
+                <button id="galleryBtn" class="end-btn">Ir para a galeria</button>
+                <button id="backLoginBtn" class="end-btn secondary">Voltar ao início</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="historia.js"></script>
+</body>
+
+</html>
