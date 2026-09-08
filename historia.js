@@ -1,6 +1,3 @@
-// ==============================
-// CONTEÚDO DO LIVRO
-// ==============================
 const pagesData = [
     {
         header: "Capítulo I",
@@ -123,9 +120,6 @@ const pagesData = [
     }
 ];
 
-// ==============================
-// ELEMENTOS
-// ==============================
 const coverScreen = document.getElementById("coverScreen");
 const bookScreen = document.getElementById("bookScreen");
 const bookCover = document.getElementById("bookCover");
@@ -141,9 +135,6 @@ const heartsContainer = document.querySelector(".hearts");
 let currentPage = 0;
 const totalPages = pagesData.length;
 
-// ==============================
-// CRIAR PÁGINAS
-// ==============================
 function createPages() {
     book.innerHTML = "";
 
@@ -164,9 +155,6 @@ function createPages() {
     });
 }
 
-// ==============================
-// NAVEGAÇÃO
-// ==============================
 function updatePages() {
     const pages = document.querySelectorAll(".page");
 
@@ -207,9 +195,6 @@ function prevPage() {
     }
 }
 
-// ==============================
-// ABRIR LIVRO
-// ==============================
 function openBook() {
     coverScreen.classList.add("hidden");
     bookScreen.classList.remove("hidden");
@@ -217,9 +202,6 @@ function openBook() {
     updatePages();
 }
 
-// ==============================
-// EVENTOS
-// ==============================
 bookCover.addEventListener("click", openBook);
 
 prevBtn.addEventListener("click", prevPage);
@@ -253,9 +235,6 @@ galleryBtn.addEventListener("click", () => {
 });
 
 
-// ==============================
-// CORAÇÕES FLUTUANDO
-// ==============================
 function createHeart() {
     const heart = document.createElement("div");
     heart.classList.add("floating-heart");

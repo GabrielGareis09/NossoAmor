@@ -43,7 +43,6 @@ body {
     }
 }
 
-/* Header */
 .gallery-header {
     text-align: center;
     padding: 50px 20px 30px;
@@ -70,7 +69,6 @@ body {
     color: #c9aeba;
 }
 
-/* Galeria */
 .gallery-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -123,7 +121,6 @@ body {
     opacity: 1;
 }
 
-/* Footer */
 .gallery-footer {
     display: flex;
     justify-content: center;
@@ -166,7 +163,6 @@ body {
     border-color: #d990aa;
 }
 
-/* Lightbox */
 .lightbox {
     position: fixed;
     inset: 0;
@@ -249,7 +245,6 @@ body {
     letter-spacing: 1px;
 }
 
-/* Responsivo */
 @media (max-width: 600px) {
     .gallery-container {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));

@@ -51,9 +51,6 @@ body {
     display: none !important;
 }
 
-/* ==============================
-   CAPA DO LIVRO (FECHADO)
-============================== */
 .cover-screen {
     display: flex;
     flex-direction: column;
@@ -186,9 +183,6 @@ body {
     50% { opacity: 1; }
 }
 
-/* ==============================
-   LIVRO ABERTO
-============================== */
 .book-screen {
     width: 100%;
     min-height: 100vh;
@@ -330,9 +324,6 @@ body {
     border-radius: 3px;
 }
 
-/* ==============================
-   CONTROLES
-============================== */
 .controls {
     display: flex;
     align-items: center;
@@ -376,9 +367,6 @@ body {
     text-align: center;
 }
 
-/* ==============================
-   OPÇÕES DO FINAL
-============================== */
 .end-options {
     margin-top: 24px;
     text-align: center;
@@ -436,9 +424,6 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* ==============================
-   RESPONSIVO
-============================== */
 @media (max-width: 480px) {
     .book-cover {
         width: 260px;
